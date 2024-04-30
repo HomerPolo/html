@@ -4,53 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        article{
-            background-color: brown;
-            text-align: center;
-            color: aliceblue;
-        }
-        {
-            img{
-                width: 500px;
-            }
-        }
-    </style>
+    
 </head>
 <body>
     <header>
-        <h1>dinheiro</h1>
-        <nav>
-            <ul>
-                <li><a href="home"></a></li>
-                <li><a href="noticias do dia"></a></li>
-                <li><a href="imagens do dia"></a></li>
-                <li><a href="contato"></a></li>
-            </ul>
-        </nav>
+      <p>Calculadora de Conversão</p>
     </header>
     <main>
-        <article>
-            <head>
-                <h2>imagen 1</h2>
-            <figure>
-                <img src="./imagens/73848b4f-screen-shot-2020-04-22-at-10.53.30-am.png" alt="">
-                <figcaption>curso de segurança <em>endpoint</em></figcaption>
-            </figure>    
-            </head>
-        </article>
-        <article>
-            <header>
-                <h2>imagem 2</h2>
-            </header>
-            <figure>
-                <img src="./imagens/EndpointSecurity.png" alt="">
-            </figure>
-        </article>
-
+      <div class="conversor">
+        <label for="decimal">Decimal:</label>
+        <input type="text" id="decimal" placeholder="Insira um número decimal">
+        <button id="btnDecimalToBinary">Converter para Binário</button>
+        <div id="resultadoDecimalToBinary"></div>
+      </div>
+      <div class="conversor">
+        <label for="binary">Binário:</label>
+        <input type="text" id="binary" placeholder="Insira um número binário">
+        <button id="btnBinaryToDecimal">Converter para Decimal</button>
+        <div id="resultadoBinaryToDecimal"></div>
+      </div>
     </main>
     <footer>
-
+      <p>&copy; 2024 Calculadora de Conversão. Todos os direitos reservados.</p>
     </footer>
-</body>
+    <script src="https://guiyti.github.io/exercicio_aula08/script.js"></script>
+  
+  </body>
 </html>
